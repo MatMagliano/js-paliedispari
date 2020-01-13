@@ -1,4 +1,4 @@
-alert('Hello World')
+//alert('Hello World')
 
 //---------------------------
 
@@ -8,4 +8,19 @@ alert('Hello World')
 
 // Inserimento frase
 
+
+
 var parolaInserita = prompt('Inserisci una parola');
+console.log(parolaInserita);
+
+//----------------------------
+
+// Controllo palindroma
+
+var parolaPalindroma = '';
+
+for (var i = parolaInserita.length; i >= 0; i -- ) {
+  parolaPalindroma += parolaInserita[i];
+}
+
+console.log(parolaPalindroma);
