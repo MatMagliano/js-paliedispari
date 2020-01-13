@@ -9,6 +9,16 @@
 
 //------------SCELTA PARI O DISPARI------------------------------
 
+
 var pariDispari = prompt('Scegli tra pari e dispari');
 pariDispari = pariDispari.toLowerCase()
-console.log(pariDispari);
+
+var scelta = [];
+
+if (pariDispari != 'pari' && pariDispari != 'dispari')  {
+  alert('Inserito dato sbagliato');
+  pariDispari = prompt('Scegli tra pari e dispari');
+} else {
+  scelta.push(pariDispari);
+}
+console.log(scelta);
