@@ -17,8 +17,16 @@ var scelta = [];
 
 if (pariDispari != 'pari' && pariDispari != 'dispari')  {
   alert('Inserito dato sbagliato');
-  pariDispari = prompt('Scegli tra pari e dispari');
 } else {
   scelta.push(pariDispari);
 }
 console.log(scelta);
+
+//------------SCELTA NUMERO------------------------------
+
+var numero = parseInt(prompt('Inserisci un numero da 1 a 5'))
+if (numero > 5)  {
+  alert('Inserito dato sbagliato');
+} else {
+  console.log(numero);
+}
