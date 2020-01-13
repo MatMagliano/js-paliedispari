@@ -49,11 +49,11 @@ console.log('La somma è ' + sommaNum);
 
 //------------CONTROLLO VINCITORE------------------------------
 
-if (sommaNum % 2 == 0 && 'pari') {
+if (sommaNum % 2 == 0 && pariDispari == 'pari') {
   console.log('HAI VINTO');
-} else if (sommaNum % 2 == 0 && 'dispari') {
+} else if (sommaNum % 2 == 0 && pariDispari == 'dispari') {
   console.log('HAI PERSO');
-} else if (sommaNum % 2 != 0 && 'pari') {
+} else if (sommaNum % 2 != 0 && pariDispari == 'pari') {
   console.log('HAI PERSO');
 } else {
   console.log('HAI VINTO');

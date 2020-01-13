@@ -42,7 +42,7 @@ console.log(parolaInserita);
 //   console.log('la parola è palindroma!');
 // }
 // else {
-//   console.log('laparola non è palindroma');
+//   console.log('la parola non è palindroma');
 // }
 
 //--------- FUNZIONE -------------------
