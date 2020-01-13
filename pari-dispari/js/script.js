@@ -22,11 +22,39 @@ if (pariDispari != 'pari' && pariDispari != 'dispari')  {
 }
 console.log(scelta);
 
+
 //------------SCELTA NUMERO------------------------------
 
 var numero = parseInt(prompt('Inserisci un numero da 1 a 5'))
+
+
 if (numero > 5)  {
   alert('Inserito dato sbagliato');
 } else {
   console.log(numero);
+
+}
+
+//------------NUMERO RANDOM ------------------------------
+
+var numeroRandom = Math.floor(Math.random() * 5) + 1;
+
+console.log(numeroRandom);
+
+
+//------------SOMMA NUMERI ------------------------------
+
+var sommaNum = numero + numeroRandom;
+console.log('La somma è ' + sommaNum);
+
+//------------CONTROLLO VINCITORE------------------------------
+
+if (sommaNum % 2 == 0 && 'pari') {
+  console.log('HAI VINTO');
+} else if (sommaNum % 2 == 0 && 'dispari') {
+  console.log('HAI PERSO');
+} else if (sommaNum % 2 != 0 && 'pari') {
+  console.log('HAI PERSO');
+} else {
+  console.log('HAI VINTO');
 }
